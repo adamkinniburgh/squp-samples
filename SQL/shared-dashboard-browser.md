@@ -1,6 +1,6 @@
 This snippet can be used with SQL Analytics to format the response from SquaredUp's API `openaccess/shares` endpoint to make a tile of clickable blocks that represent shared dashboards. Works as a nice browser / directory.
 
-```
+```SQL
 SELECT
     CASE
         WHEN [properties.requireAuthentication] = true
