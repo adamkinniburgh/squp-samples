@@ -11,6 +11,7 @@ SELECT
         WHEN "properties.enabled" = true THEN 'success'
         ELSE 'unknown'
     END AS state,
+--- make sure to use eu.app if you're an EU user
     CONCAT('http://app.squaredup.com/openaccess/', SUBSTRING("id", 9)) AS link
 FROM dataset1
 --- the following line can be used to filter out dashboards by workspace
